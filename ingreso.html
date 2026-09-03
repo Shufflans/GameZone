@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @import "tailwindcss";
+        @import url('https://googleapis.com');
+        @theme {
+            --font-press: "Press Start 2P", cursive;
+            --font-exo: "Exo 2", sans-serif;
+        }
+    </style>
+</head>
+<body class="text-[#4CC9F0] font-exo bg-[#5A189A]">
+    <div class="bg-[#3C096C] p-4">
+        <header class="flex justify-between items-center">
+            <a href="#">Home</a>
+            <h1 class="text-[#F72585] font-press">GameZone</h1>
+            <button class="bg-[#240046] rounded-xl shadow-sm shadow-[#4CC9F0]/50 p-2 text-sm hover:shadow-[#4CC9F0] hover:shadow-md active:scale-98 transition-all duration-200">Iniciar Sesión</button>
+        </header>
+    </div>
+
+    <div>
+        <section>
+            <form action="" class="bg-[#F72585]">
+                <h2>Inicio de Sesión</h2>
+                <div>
+                    <label>Correo</label>
+                    <input type="email" placeholder="john@doe.com">
+                </div>
+                <div>
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="••••••••">
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
