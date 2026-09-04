@@ -25,24 +25,24 @@
 <body class="text-[#4CC9F0] font-exo bg-[#5A189A]">
     <div class="bg-[#3C096C] p-4">
         <header class="flex justify-between items-center">
-            <a href="ingreso.html">
-                Iniciar Sesión
+            <a href="#">
+                Home
             </a>
-            <h1 class="text-[#F72585] font-press">
-                GameZone
+            <h1 class="text-[#F72585] font-press">GameZone
             </h1>
+            <a href="ingreso.html" class="bg-[#240046] rounded-xl shadow-sm shadow-[#4CC9F0]/50 p-2 text-sm hover:shadow-[#4CC9F0] hover:shadow-md active:scale-98 transition-all duration-200">Iniciar Sesión</a>
         </header>
     </div>
 
     <div>
-        <section>
-            <form id="registroForm">
-                <h2>Crear Cuenta</h2>
-                <div>
-                    <label for="nombre">
+        <section class="lg:w-[800px] lg:m-auto md:w-[600px] md:m-auto">
+            <form id="registroForm" class="mt-5 mx-4 rounded-xl overflow-hidden shadow-md shadow-[#4CC9F0]/60">
+                <h2 class="bg-[#F72585]/50 p-2 flex justify-center text-sm">Crear Cuenta</h2>
+                <div class="bg-[#F72585]/70 p-2">
+                    <label class="block mb-2" for="nombre">
                         Nombre Completo
                     </label>
-                    <input
+                    <input class="bg-[#F72585]/50 rounded-xl w-full p-2"
                         type="text"
                         id="nombre"
                         maxlength="100"
@@ -50,11 +50,11 @@
                     >
                     <p id="errorNombre"></p>
                 </div>
-                <div>
-                    <label for="correo">
+                <div class="bg-[#F72585]/70 p-2">
+                    <label class="block mb-2" for="correo">
                         Correo Electrónico
                     </label>
-                    <input
+                    <input class="bg-[#F72585]/50 rounded-xl w-full p-2"
                         type="email"
                         id="correo"
                         maxlength="60"
@@ -62,44 +62,44 @@
                     >
                     <p id="errorCorreo"></p>
                 </div>
-                <div>
-                    <label for="contrasena">
+                <div class="bg-[#F72585]/70 p-2">
+                    <label class="block mb-2" for="contrasena">
                         Contraseña
                     </label>
-                    <input
+                    <input class="bg-[#F72585]/50 rounded-xl w-full p-2"
                         type="password"
                         id="contrasena"
                         placeholder="Ingrese su contraseña"
                     >
                     <p id="errorContrasena"></p>
                 </div>
-                <div>
-                    <label for="confirmarContrasena">
+                <div class="bg-[#F72585]/70 p-2">
+                    <label class="block mb-2" for="confirmarContrasena">
                         Confirmar Contraseña
                     </label>
-                    <input
+                    <input class="bg-[#F72585]/50 rounded-xl w-full p-2"
                         type="password"
                         id="confirmarContrasena"
                         placeholder="Repita su contraseña"
                     >
                     <p id="errorConfirmar"></p>
                 </div>
-                <div>
-                    <label for="telefono">
+                <div class="bg-[#F72585]/70 p-2">
+                    <label class="block mb-2" for="telefono">
                         Teléfono (opcional)
                     </label>
-                    <input
+                    <input class="bg-[#F72585]/50 rounded-xl w-full p-2"
                         type="tel"
                         id="telefono"
                         placeholder="+56912345678"
                     >
                     <p id="errorTelefono"></p>
                 </div>
-                <div>
-                    <label>
+                <div class="bg-[#F72585]/70 p-2">
+                    <label class="block mb-2">
                         Género favorito
                     </label>
-                    <div>
+                    <div class="bg-[#F72585]/50 rounded-xl w-full p-5 grid gap-5 grid-cols-3">
                         <label>
                             <input type="checkbox" name="genero" value="FICCION">
                             Ficción
@@ -132,7 +132,7 @@
                     </div>
                     <p id="errorGenero"></p>
                 </div>
-                <button type="submit">
+                <button class="bg-[#F72585]/70 p-2 w-full" type="submit">
                     Crear Cuenta
                 </button>
                 <p id="mensajeRegistro"></p>
